@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bckg"
+        tools:context=".MainActivity">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="395dp"
+            android:layout_height="715dp" tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="8dp">
+        <TextView
+                android:text="Alfian Dwi Prasetya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView" android:textSize="24sp"
+                android:textColor="#130303" android:layout_marginLeft="100dp" android:layout_marginTop="50dp"/>
+        <TextView
+                android:text="Universitas Teknologi Yogyakarta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView2" android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp" android:textSize="24sp" android:textColor="#0C0B0B"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:text="Facebook"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_facebook" android:layout_weight="1"
+                    android:textColor="#0C0C0C"
+                    android:drawableLeft="@drawable/fb" tools:text="facebook"
+                    android:layout_marginTop="30dp"
+                    android:backgroundTint="@color/cardview_light_background"/>
+            <Button
+                    android:text="Instagram"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_instagram"
+                    android:layout_weight="1"
+                    android:textColor="#0C0C0C"
+                    android:layout_marginTop="30dp"
+                    android:drawableLeft="@drawable/ig"
+                    android:backgroundTint="@color/cardview_light_background"/>
+        </LinearLayout>
+        <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp" app:srcCompat="@drawable/mm" android:id="@+id/imageView7"
+                android:layout_marginRight="50dp" android:layout_marginTop="50dp" android:layout_marginBottom="50dp"
+                android:layout_marginLeft="50dp"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_marginBottom="30dp">
+            <Button
+                    android:text="PLAY"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/ic_play_arrow_black_24dp"
+                    android:layout_height="wrap_content" android:id="@+id/btn_play" android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"/>
+            <Button
+                    android:text="PAUSE"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/ic_pause_circle_filled_black_24dp"
+                    android:layout_height="wrap_content" android:id="@+id/btn_pause" android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"/>
+            <Button
+                    android:text="STOP"
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/ic_stop_black_24dp"
+                    android:layout_height="wrap_content" android:id="@+id/btn_stop" android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
